@@ -1,3 +1,10 @@
+Switching to American English. I'm finding every British spelling first.
+
+Just three occurrences. Fixing them in the game and the source files.
+
+Spelling is now American ("color" in all three places), and the published page is updated. Replace your whole saved file with the code below. It also hides any stray text that gets pasted in with it.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -206,7 +213,7 @@ ul.plain.sub li+li{margin-top:8px}
     <div class="field"><label>Opponent</label>
       <div class="seg" id="segMode"><button data-v="ai">Computer</button><button data-v="2p">Two players</button></div></div>
 
-    <div class="field ai-only"><label>Your colour</label>
+    <div class="field ai-only"><label>Your color</label>
       <div class="sides" id="segSide">
         <button class="side w" data-v="0"><span class="sw"><span class="g">♚&#xFE0E;</span></span><b>White</b><small>moves first</small></button>
         <button class="side" data-v="r"><span class="sw"><span class="q">?</span></span><b>Random</b><small>chosen for you</small></button>
@@ -224,7 +231,7 @@ ul.plain.sub li+li{margin-top:8px}
   <div class="card" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" tabindex="-1">
     <button class="xbtn" id="closeSettings" aria-label="Close">×</button>
     <h2 id="settingsTitle">Settings</h2>
-    <div class="field"><label>Board colour</label>
+    <div class="field"><label>Board color</label>
       <div class="themes" id="themes"></div></div>
     <button class="act primary" id="btnDone">Done</button>
   </div>
@@ -837,7 +844,7 @@ function chooseMove(s, level) {
   $('trayTop').addEventListener('click', onTrayClick);
   $('trayBottom').addEventListener('click', onTrayClick);
 
-  // Start: show the sheet so the player picks a colour before the first move.
+  // Start: show the sheet so the player picks a color before the first move.
   G.mode = S.mode; G.level = S.level; G.human = 0;
   newGame();
   renderSetup();
@@ -847,3 +854,4 @@ function chooseMove(s, level) {
 </script>
 </body>
 </html>
+```
